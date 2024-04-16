@@ -1,4 +1,4 @@
-# TODO Array for environments 
+t# TODO Array for environments 
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -9,7 +9,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com//n.git
+    repoURL: https://github.com/suxess-it/n.git
     # github.com?owner=suxess-it&repo=n
     targetRevision: HEAD
     path: helm/chart
