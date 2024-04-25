@@ -1,2 +1,2 @@
 # approved-application
-# to authenticate developer generated pull requests
+# to authenticate developer generated pull requests 
