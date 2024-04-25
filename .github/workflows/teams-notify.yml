@@ -8,7 +8,7 @@
 #jobs:
 #  if_merged:
 #    if: github.event.pull_request.merged == true
-#    runs-on: ubuntu-latest
+#   runs-on: ubuntu-latest
 name: MS Teams Deploy Card
 
 on: [push]
