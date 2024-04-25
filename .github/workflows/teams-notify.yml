@@ -1,15 +1,21 @@
+#name: MS Teams Deploy Card
+#
+#on:
+#  pull_request:
+#    types:
+#      - closed#
+
+#jobs:
+#  if_merged:
+#    if: github.event.pull_request.merged == true
+#    runs-on: ubuntu-latest
 name: MS Teams Deploy Card
 
-on:
-  pull_request:
-    types:
-      - closed
+on: [push]
 
 jobs:
-  if_merged:
-    if: github.event.pull_request.merged == true
+  build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
       # this is the new step
