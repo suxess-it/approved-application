@@ -1,0 +1,23 @@
+# TODO Array for environments 
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: test-second-team-app
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/jkleinlercher/test-second-repo.git
+    targetRevision: HEAD
+    path: team-app
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
+  syncPolicy:
+    automated: 
+      prune: true
+      selfHeal: true
+
+
